@@ -9,6 +9,7 @@ pids
 
 # Dependency directory
 node_modules
+dist
 
 #Webstorm metadata
 .idea
