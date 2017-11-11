@@ -1,11 +1,14 @@
 import React from 'react';
 import StarshipList from './StarshipList.jsx';
+import FilterStarshipsList from './FilterStarshipsList.jsx';
 
 const App = () =>
-  <div className='container row'>
-    <h1 className="small-12 column">Starships</h1>
-    <input className="small-8 column" type="text" name="search" id="search" placeholder="Find your starship" required />
+  <div className='container'>
+    <FilterStarshipsList />
     <StarshipList />
+    <footer>
+      <p className="text-center small-12 column row">May the force be with you...</p>
+    </footer>
   </div>;
 
 export default App;
