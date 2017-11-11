@@ -19,7 +19,7 @@ const inputStyle = {
 
 const FilterStarshipsList = ({ setFilterStr }) =>
   <header style={headerStyle}>
-    <h1 className="text-center small-10 columns row">Starships</h1>
+    <h1 className="small-10 columns row">Starships</h1>
     <p className="small-10 columns row">Find your favorite starships!<br/>
       Roger rogue leader!
     </p>
