@@ -17,6 +17,7 @@ const liStyle = {
 }
 
 const contentStyle = {
+  height: '10.000em',
   margin: '5px',
   padding: '0.8em',
   border: '1px solid #000'

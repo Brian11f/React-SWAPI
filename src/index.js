@@ -8,8 +8,7 @@ import reducer from './reducer';
 import { getStarShips } from './reducer/starships/actions'
 
 const store = createStore(reducer, compose(
-  applyMiddleware(thunk),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  applyMiddleware(thunk)
 ));
 
 store.dispatch(getStarShips());

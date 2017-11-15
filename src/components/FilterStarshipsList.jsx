@@ -40,7 +40,7 @@ const mapStateToProps = ({ setFilterStr }) => ({
 
 // typechecking
 FilterStarshipsList.propTypes = {
-  setFilterStr: PropTypes.string,
+  setFilterStr: PropTypes.func,
 }
 
 // shorthand mapDispatchToProps
