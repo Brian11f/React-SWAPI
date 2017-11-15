@@ -2063,7 +2063,7 @@ var _actions = __webpack_require__(31);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var store = (0, _redux.createStore)(_reducer2.default, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
+var store = (0, _redux.createStore)(_reducer2.default, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default)));
 
 store.dispatch((0, _actions.getStarShips)());
 
@@ -22322,6 +22322,7 @@ var liStyle = {
 };
 
 var contentStyle = {
+  height: '10.000em',
   margin: '5px',
   padding: '0.8em',
   border: '1px solid #000'
@@ -23749,7 +23750,7 @@ var mapStateToProps = function mapStateToProps(_ref2) {
 
 // typechecking
 FilterStarshipsList.propTypes = {
-  setFilterStr: _propTypes2.default.string
+  setFilterStr: _propTypes2.default.func
 
   // shorthand mapDispatchToProps
 };exports.default = (0, _reactRedux.connect)(mapStateToProps, { setFilterStr: _actions.setFilterEventStr })(FilterStarshipsList);
